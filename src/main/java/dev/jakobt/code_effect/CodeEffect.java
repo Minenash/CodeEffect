@@ -45,10 +45,6 @@ public class CodeEffect implements ModInitializer {
     @Override
     public void onInitialize() {
         Registry.register(Registries.ENCHANTMENT_ENTITY_EFFECT_TYPE, new Identifier("code_effect", "run_code"), RunCodeEnchantmentEffectType.CODEC);
-
-        register(new Identifier("code_effect", "testhook"), (world, level, context, user, pos) -> {
-            System.out.println( user.getNameForScoreboard() + "→" + level );
-        });
     }
 
 }
