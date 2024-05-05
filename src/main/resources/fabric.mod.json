@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "code-effect",
+  "version": "${version}",
+
+  "name": "CodeEffect",
+  "description": "Adds a new enchantment effect that runs a registared method. Simular to run_function but with code",
+  "authors": [],
+  "contact": {},
+
+  "license": "LGPL-3.0",
+  "icon": "assets/code-effect/icon.png",
+
+  "environment": "server",
+  "entrypoints": {},
+
+      "mixins": [
+        "code-effect.mixins.json"
+      ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
